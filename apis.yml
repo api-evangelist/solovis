@@ -1,7 +1,33 @@
 aid: solovis
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/solovis.png
 name: Solovis
-description: Solovis is a company surfaced as a portfolio company of insight-partners and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Solovis is a multi-asset investment analytics and portfolio management
+  software platform for institutional investors, including endowments,
+  foundations, pension plans, outsourced CIOs (OCIOs), and family offices. It
+  aggregates data across public and private asset classes into a single
+  dashboard for portfolio modeling, performance analysis, risk analytics, and
+  reporting. Core products include Portfolio Analytics, Risk Analytics, Predict
+  (performance and risk prediction for asset allocation), Risk Pro (factor-based
+  risk analytics, formerly Venn Pro), and Analyst Services for outsourced data
+  capture and portfolio data aggregation. Solovis became part of Nasdaq's
+  investment intelligence business following its 2020 acquisition. The platform
+  is delivered as a private, authenticated SaaS accessed through a client login;
+  as of this enrichment pass it publishes no public developer API, documentation
+  portal, OpenAPI specification, or `/.well-known/` discovery surface. The host
+  api.solovis.com exists but is fully authentication-gated (HTTP 401) with no
+  public specification.
 url: https://raw.githubusercontent.com/api-evangelist/solovis/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,10 +37,38 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
 tags:
 - Company
+- Investment Analytics
+- Portfolio Management
+- Risk Analytics
+- Institutional Investors
+- Asset Allocation
+- Multi-Asset
+- Financial Data
+- Reporting
 apis: []
+common:
+- type: DomainSecurity
+  url: security/solovis-domain-security.yml
+- type: Website
+  url: https://solovis.com/
+- type: Login
+  url: https://go.solovis.com/client-log-in
+- type: Support
+  url: https://community.solovis.com/
+- type: Blog
+  url: https://go.solovis.com/insights
+- type: TermsOfService
+  url: https://solovis.com/terms-and-conditions/
+- type: PrivacyPolicy
+  url: https://solovis.com/privacy-policy/
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
