@@ -57,7 +57,7 @@ x-enrichment:
 tags:
 - Company
 - Investment Analytics
-- Portfolio-Management
+- Portfolio Management
 - Risk Analytics
 - Institutional Investors
 - Asset Allocation
@@ -74,6 +74,7 @@ tags_raw:
 - Multi-Asset
 - Financial Data
 - Reporting
+- Portfolio-Management
 apis: []
 common:
 - type: DomainSecurity
