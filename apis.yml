@@ -48,7 +48,7 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.23'
 created: '2026-07-17'
-modified: '2026-07-21'
+modified: '2026-10-06'
 x-enrichment:
   date: '2026-07-21'
   status: minimal
@@ -77,6 +77,8 @@ tags_raw:
 - Portfolio-Management
 apis: []
 common:
+- url: https://go.solovis.com/insights/rss.xml
+  type: BlogRSS
 - type: DomainSecurity
   url: security/solovis-domain-security.yml
 - type: Website
